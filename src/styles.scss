@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #ff6600;
+$meta-color: #828282;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Verdana", "Geneva", "sans-serif";
+  font-size: 10pt;
+  margin: 8px;
+}
+
+.primary {
+  background-color: $primary-color;
+}
+
+.container {
+  background-color: rgb(246, 246, 239);
+  width: 85%;
+  min-width: 796px;
+  margin: auto;
+}
