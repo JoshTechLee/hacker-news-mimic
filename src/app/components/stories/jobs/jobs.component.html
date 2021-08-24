@@ -1,1 +1,6 @@
-<p>jobs works!</p>
+<p>These are jobs at YC startups. See more at ycombinator.com/jobs.</p>
+<app-job-item 
+    *ngFor="let story of stories; index as index"  [index]="index"
+    [story]="story"
+    >
+</app-job-item>
