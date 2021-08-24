@@ -1,5 +1,5 @@
 <app-story-item 
-*ngFor="let story of stories" 
-[story]="story"
->
+    *ngFor="let story of stories; index as index"  [index]="index"
+    [story]="story"
+    >
 </app-story-item>

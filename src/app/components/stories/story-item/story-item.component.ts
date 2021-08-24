@@ -7,7 +7,7 @@ import { Story, initStory } from 'src/app/models/Story';
   styleUrls: ['./story-item.component.scss']
 })
 export class StoryItemComponent implements OnInit {
-
+  @Input() index: number = 0
   @Input() story: Story = initStory
 
   constructor() { }

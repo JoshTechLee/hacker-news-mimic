@@ -5,6 +5,7 @@ export interface Story {
     kids : number[],
     score : number,
     time : number,
+    datePosted?: string
     title : string,
     type : string,
     url : string,

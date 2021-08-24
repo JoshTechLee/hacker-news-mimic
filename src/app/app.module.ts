@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/stories/home/home.component';
 import { StoryItemComponent } from './components/stories/story-item/story-item.component';
+import { JobItemComponent } from './components/stories/job-item/job-item.component';
+import { JobsComponent } from './components/stories/jobs/jobs.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { StoryItemComponent } from './components/stories/story-item/story-item.c
     HeaderComponent,
     HomeComponent,
     StoryItemComponent,
+    JobItemComponent,
+    JobsComponent,
   ],
   imports: [
     BrowserModule,
