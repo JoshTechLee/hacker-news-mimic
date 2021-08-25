@@ -1,5 +1,5 @@
 
-
+import { StoryService } from "src/app/services/story.service"
 
 export const getStoryPostDate = (postTimeEpox:number, currentTimeEpox:number):string => {
     const minutes = (currentTimeEpox - postTimeEpox) /  (60 * 1000)

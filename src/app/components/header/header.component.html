@@ -7,14 +7,13 @@
         <h1>Hacker News</h1>
     </a>
     <nav>
-        <a>new</a> |
+        <a routerLink="/new" (click)="setTab('new')" [ngStyle]="{'color': tab == 'new' ? 'white' : 'black'}">new</a> |
         <a>past</a> |
         <a>comments</a> |
-        <a>ask</a> |
-        <a>show</a> |
-        <a routerLink="/jobs">jobs</a> |
-        <a>submit</a> |
-        <span class="date-today">2021-08-22</span>
+        <a routerLink="/ask" (click)="setTab('ask')" [ngStyle]="{'color': tab == 'ask' ? 'white' : 'black'}">ask</a> |
+        <a routerLink="/show" (click)="setTab('show')" [ngStyle]="{'color': tab == 'show' ? 'white' : 'black'}">show</a> |
+        <a routerLink="/jobs" (click)="setTab('jobs')" [ngStyle]="{'color': tab == 'jobs' ? 'white' : 'black'}">jobs</a> |
+        <a>submit</a>
     </nav>
 <a class="login-btn">login</a>
 </header>

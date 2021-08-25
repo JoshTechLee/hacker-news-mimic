@@ -3,6 +3,11 @@
     <img src="assets/imgs/grayarrow.gif" alt="upvote">
     <div>
         <h3>{{story.title}}</h3>
-        <span class="metadata">{{story.score}} points by {{story.by}} {{story.datePosted}} | hide | </span>
+        <span class="metadata">
+            {{story.score}} points 
+            by {{story.by}} 
+            {{story.datePosted}} | 
+            hide | 
+            <a routeLink="/item">comments</a> </span>
     </div>
 </li>

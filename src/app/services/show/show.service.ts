@@ -6,9 +6,9 @@ import { StoryService } from '../story.service'
   providedIn: 'root'
 })
 
-export class JobsService extends StoryService {
+export class ShowService extends StoryService {
   constructor(http:HttpClient) {
-    const topStoriesUrl = 'https://hacker-news.firebaseio.com/v0/jobstories.json?print=pretty';
-    super(http, topStoriesUrl)
+    const showStoriesUrl = 'https://hacker-news.firebaseio.com/v0/showstories.json?print=pretty';
+    super(http, showStoriesUrl)
   }
 }
