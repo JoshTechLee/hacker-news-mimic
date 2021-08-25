@@ -1,7 +1,7 @@
 
 import { StoryService } from "src/app/services/story.service"
 
-export const getStoryPostDate = (postTimeEpox:number, currentTimeEpox:number):string => {
+export const getPostDate = (postTimeEpox:number, currentTimeEpox:number):string => {
     const minutes = (currentTimeEpox - postTimeEpox) /  (60 * 1000)
     if (minutes < 60) 
       return `${Math.floor(minutes)} ${minutes < 2 ? 'minute' : 'minutes'} ago`
@@ -19,5 +19,5 @@ export const getStoryPostDate = (postTimeEpox:number, currentTimeEpox:number):st
   }
 
   export const getUrlSource = (url:string) => {
-    
+
   }

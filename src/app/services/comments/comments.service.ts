@@ -7,7 +7,6 @@ import { StoryService } from '../story.service';
 })
 export class CommentsService extends StoryService {
   constructor(http:HttpClient) {
-    const url = '';
-    super(http, url)
+    super(http, '')
   }
 }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { initStory, Story } from 'src/app/models/Story';
 import { CommentsService } from 'src/app/services/comments/comments.service';
-import { getStoryPostDate } from 'src/app/common/story-helper';
+import { getPostDate } from 'src/app/common/story-helper';
 
 
 @Component({
@@ -33,7 +33,7 @@ export class ThreadComponent implements OnInit {
       for (var kid of this.story.kids) {
         this.storyService.getStory(kid).subscribe(comment => {
           const currentTimeEpox = Date.now()
-          comment.datePosted = getStoryPostDate(comment.time * 1000, currentTimeEpox)
+          comment.datePosted = getPostDate(comment.time * 1000, currentTimeEpox)
           this.comments.push(comment)
         })
       }

@@ -1,0 +1,25 @@
+@import "src/styles.scss";
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  span {
+    display: flex;
+    padding: 2px 0px;
+    .descriptor {
+      color: $meta-color;
+      width: 60px;
+    }
+    .description {
+      color: $meta-color;
+      .about-description {
+        padding: 20px 0px;
+        p {
+          margin: 2px;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

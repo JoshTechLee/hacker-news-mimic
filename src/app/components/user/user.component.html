@@ -1,0 +1,25 @@
+<div class="user-container">
+    <span>
+        <div class="descriptor">user:</div>
+        <div class="description"><a [routerLink]="['/user', user.id]">{{user.id}}</a></div>
+    </span>
+    <span>
+        <div class="descriptor">created:</div>
+        <div class="description">{{user.datePosted}}</div>
+    </span>
+    <span>
+        <div class="descriptor">karma:</div>
+        <div class="descripton">{{user.karma}}</div>
+    </span>
+    <span>
+        <div class="descriptor">about:</div>
+        <div class="description">
+            <!-- TODO -->
+            <div class="about-description">
+                <p>submissions</p>
+                <p>comments</p>
+                <p>favorites</p>
+            </div>
+        </div>
+    </span>
+</div>

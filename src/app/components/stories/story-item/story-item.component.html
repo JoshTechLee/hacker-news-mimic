@@ -8,7 +8,8 @@
         </span>
         <span class="metadata">
             {{story.score}} points 
-            by {{story.by}} 
+            by 
+            <a [routerLink]="['/user', story.by]">{{story.by}}</a> 
             <a [routerLink]="['/item', story.id]">{{story.datePosted}}</a> | 
             hide | 
             <a [routerLink]="['/item', story.id]">
