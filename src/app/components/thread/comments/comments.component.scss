@@ -1,3 +1,5 @@
+@import "src/styles.scss";
+
 .comment {
   box-sizing: border-box;
   padding: 10px;
@@ -10,16 +12,19 @@
   }
   .content {
     display: inline-block;
+    span {
+      color: $meta-color;
+      font-size: 8pt;
+    }
     p {
       box-sizing: border-box;
       overflow: auto;
       word-wrap: break-word;
+      font-size: 9pt;
     }
   }
 
   .child-comments {
-    box-sizing: border-box;
-    overflow: auto;
-    word-wrap: break-word;
+    display: table-cell;
   }
 }

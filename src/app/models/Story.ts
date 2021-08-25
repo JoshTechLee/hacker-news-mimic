@@ -10,6 +10,7 @@ export interface Story {
     type : string,
     url : string,
     text?: string,
+    index?: number,
 }
 
 export const initStory = {

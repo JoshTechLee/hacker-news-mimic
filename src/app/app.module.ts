@@ -16,6 +16,7 @@ import { NewComponent } from './components/stories/new/new.component';
 import { CommentsComponent } from './components/thread/comments/comments.component';
 import { TopicComponent } from './components/thread/topic/topic.component';
 import { ThreadComponent } from './components/thread/thread.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ThreadComponent } from './components/thread/thread.component';
     CommentsComponent,
     TopicComponent,
     ThreadComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

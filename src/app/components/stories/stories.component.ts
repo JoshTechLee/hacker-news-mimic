@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class StoriesComponent implements OnInit {
   private maxPages = 30;
   private storyIds: number[] = []
+  currentPage:number = 0
   stories: Story[] = []
   storyPageNumber: number = 0
 
@@ -29,18 +30,33 @@ export class StoriesComponent implements OnInit {
     this.getStories()
   }
 
+  showMoreStories():void {
+    this.currentPage += this.maxPages
+    this.stories = []
+    this.getStories()
+  }
+
   private getStories = () => {
     this.router.routeReuseStrategy.shouldReuseRoute = () => false
     this.storyService.getStoryIds().subscribe(ids => {
-        this.storyIds = ids;
-        const storyPages:number[] = ids.slice(0, this.maxPages)
+      this.storyIds = ids
+      this.getStoriesFromIds(ids)
+    })
+  }
+
+  private getStoriesFromIds = (storyIds:number[]) => {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false
+    const lastPage = this.currentPage + this.maxPages
+    const storyPages:number[] = storyIds.slice(this.currentPage, lastPage)
         const currentTimeEpox = Date.now()
+        var index = this.currentPage + 1;
         for (var id of storyPages) {
           this.storyService.getStory(id).subscribe(story => {
             story.datePosted = getStoryPostDate(story.time * 1000, currentTimeEpox)
+            story.index = index
             this.stories.push(story)
+            index += 1
           })
         }
-      })
   }
 }
