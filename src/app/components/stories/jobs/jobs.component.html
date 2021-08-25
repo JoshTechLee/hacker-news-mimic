@@ -1,6 +1,11 @@
-<app-job-item 
-    *ngFor="let story of stories; index as index"  [index]="index"
-    [story]="story"
-    >
-</app-job-item>
-<div (click)="showMoreStories()" class="more">More</div>
+<div class="jobs-container">
+    <p>
+        These are jobs at YC startups. See more at <a href="https://www.ycombinator.com/jobs">ycombinator.com/jobs</a>.
+    </p>
+    <app-job-item 
+        *ngFor="let story of stories; index as index"  [index]="index"
+        [story]="story"
+        >
+    </app-job-item>
+    <div (click)="showMoreStories()" class="more">More</div>
+</div>

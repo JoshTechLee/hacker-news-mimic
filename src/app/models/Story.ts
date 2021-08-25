@@ -5,12 +5,13 @@ export interface Story {
     kids : number[],
     score : number,
     time : number,
-    datePosted?: string
+    datePosted?: string,
     title : string,
     type : string,
     url : string,
     text?: string,
     index?: number,
+    urlSource?: string,
 }
 
 export const initStory = {

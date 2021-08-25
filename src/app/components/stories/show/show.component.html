@@ -1,6 +1,11 @@
-<app-story-item 
-    *ngFor="let story of stories; index as index"  [index]="index"
-    [story]="story"
-    >
-</app-story-item>
-<div (click)="showMoreStories()" class="more">More</div>
+<div class="show-container">
+    <p>Please read the 
+        <a href="https://news.ycombinator.com/showhn.html">rules</a>. 
+        You can also browse the newest <a routerLink="/show">Show</a> HNs.</p>
+    <app-story-item 
+        *ngFor="let story of stories; index as index"  [index]="index"
+        [story]="story"
+        >
+    </app-story-item>
+    <div (click)="showMoreStories()" class="more">More</div>
+</div>

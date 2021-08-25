@@ -13,13 +13,14 @@ body {
   margin: 8px;
 }
 
-.primary {
-  background-color: $primary-color;
-}
-
 .container {
   background-color: rgb(246, 246, 239);
   width: 85%;
   min-width: 796px;
   margin: auto;
+}
+
+.more {
+  cursor: pointer;
+  margin: 20px;
 }

@@ -17,6 +17,7 @@ import { CommentsComponent } from './components/thread/comments/comments.compone
 import { TopicComponent } from './components/thread/topic/topic.component';
 import { ThreadComponent } from './components/thread/thread.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AddCommentComponent } from './components/thread/add-comment/add-comment.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FooterComponent } from './components/footer/footer.component';
     TopicComponent,
     ThreadComponent,
     FooterComponent,
+    AddCommentComponent,
   ],
   imports: [
     BrowserModule,

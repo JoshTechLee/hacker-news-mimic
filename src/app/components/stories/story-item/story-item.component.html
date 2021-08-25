@@ -2,12 +2,18 @@
     <span class="story-index">{{story.index}}.</span>
     <img src="assets/imgs/grayarrow.gif" alt="upvote">
     <div>
-        <h3>{{story.title}}</h3>
+        <span class="story-title">
+            <a href="{{story.url}}"><h3>{{story.title}}</h3></a>
+            
+        </span>
         <span class="metadata">
             {{story.score}} points 
             by {{story.by}} 
-            {{story.datePosted}} | 
+            <a [routerLink]="['/item', story.id]">{{story.datePosted}}</a> | 
             hide | 
-            <a [routerLink]="['/item', story.id]">comments</a> </span>
+            <a [routerLink]="['/item', story.id]">
+                {{!!story.kids ? story.kids.length + ' comments' : 'discuss'}}
+            </a>
+        </span>
     </div>
 </li>

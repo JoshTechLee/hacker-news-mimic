@@ -1,0 +1,24 @@
+@import "src/styles.scss";
+
+.footer-container {
+  border-top: 2px solid $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  * {
+    color: $meta-color;
+    text-decoration: none;
+  }
+  & > * {
+    margin: 10px 0px;
+  }
+  a:link {
+    color: black;
+  }
+  span {
+    a {
+      font-size: 8pt;
+    }
+  }
+}

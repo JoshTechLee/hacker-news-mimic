@@ -17,3 +17,7 @@ export const getStoryPostDate = (postTimeEpox:number, currentTimeEpox:number):st
     const date = new Date(postTimeEpox * 1000)
     return date.toDateString()
   }
+
+  export const getUrlSource = (url:string) => {
+    
+  }

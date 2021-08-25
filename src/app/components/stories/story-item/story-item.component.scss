@@ -1,4 +1,5 @@
 @import "src/styles.scss";
+
 li {
   display: flex;
   margin: 5px;
@@ -16,15 +17,26 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h3 {
-      width: 100%;
-      font-size: 10pt;
-      font-weight: lighter;
-      margin-bottom: 2px;
+    .story-title {
+      a {
+        text-decoration: none;
+        color: black;
+        h3 {
+          width: 100%;
+          font-size: 10pt;
+          font-weight: lighter;
+          margin-bottom: 2px;
+        }
+      }
     }
+
     .metadata {
       font-size: 7pt;
       color: $meta-color;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 }

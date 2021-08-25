@@ -1,0 +1,12 @@
+@import "src/styles.scss";
+
+.jobs-container {
+  p {
+    padding: 5px;
+    color: $meta-color;
+    a {
+      color: inherit;
+    }
+  }
+  padding: 10px;
+}
