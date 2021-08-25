@@ -53,7 +53,7 @@ export class StoriesComponent implements OnInit {
         for (var id of storyPages) {
           this.storyService.getStory(id).subscribe(story => {
             story.datePosted = getPostDate(story.time * 1000, currentTimeEpox)
-            story.baseUrl = getBaseUrl(story.url)
+            if (story.baseUrl) story.baseUrl = getBaseUrl(story.url)
             story.index = index
             this.stories.push(story)
             index += 1

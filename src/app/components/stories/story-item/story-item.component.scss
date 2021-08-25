@@ -33,6 +33,9 @@ li {
       .baseUrl {
         font-size: 8pt;
         color: $meta-color;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -42,6 +45,9 @@ li {
       a {
         text-decoration: none;
         color: inherit;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
