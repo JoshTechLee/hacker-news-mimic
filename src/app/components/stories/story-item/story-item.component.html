@@ -4,12 +4,13 @@
     <div>
         <span class="story-title">
             <a href="{{story.url}}"><h3>{{story.title}}</h3></a>
+            <a class="baseUrl" href="{{story.baseUrl}}">({{story.baseUrl}})</a>
             
         </span>
         <span class="metadata">
             {{story.score}} points 
             by 
-            <a [routerLink]="['/user', story.by]">{{story.by}}</a> 
+            <a [routerLink]="['/user', story.by]">{{story.by}} </a> 
             <a [routerLink]="['/item', story.id]">{{story.datePosted}}</a> | 
             hide | 
             <a [routerLink]="['/item', story.id]">

@@ -18,6 +18,8 @@ export const getPostDate = (postTimeEpox:number, currentTimeEpox:number):string 
     return date.toDateString()
   }
 
-  export const getUrlSource = (url:string) => {
-
+  export const getBaseUrl = (url:string):string => {
+    var pathArray = url.split('/')
+    var host = pathArray[2]
+    return host
   }

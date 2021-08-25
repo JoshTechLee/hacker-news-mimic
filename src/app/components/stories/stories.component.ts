@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StoryService } from 'src/app/services/story.service';
 import { UiService } from 'src/app/services/ui/ui.service';
 import { Story } from 'src/app/models/Story';
-import { getPostDate } from 'src/app/common/story-helper';
+import { getBaseUrl, getPostDate } from 'src/app/common/story-helper';
 import { Router } from '@angular/router';
 
 @Component({
@@ -53,6 +53,7 @@ export class StoriesComponent implements OnInit {
         for (var id of storyPages) {
           this.storyService.getStory(id).subscribe(story => {
             story.datePosted = getPostDate(story.time * 1000, currentTimeEpox)
+            story.baseUrl = getBaseUrl(story.url)
             story.index = index
             this.stories.push(story)
             index += 1

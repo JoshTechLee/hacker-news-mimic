@@ -12,6 +12,7 @@ export interface Story {
     text?: string,
     index?: number,
     urlSource?: string,
+    baseUrl?: string,
 }
 
 export const initStory = {

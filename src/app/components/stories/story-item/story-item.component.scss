@@ -18,15 +18,21 @@ li {
     flex-direction: column;
     justify-content: center;
     .story-title {
+      display: flex;
       a {
         text-decoration: none;
         color: black;
+        margin-right: 5px;
         h3 {
           width: 100%;
           font-size: 10pt;
           font-weight: lighter;
           margin-bottom: 2px;
         }
+      }
+      .baseUrl {
+        font-size: 8pt;
+        color: $meta-color;
       }
     }
 
