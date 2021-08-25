@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { StoryService } from '../story.service'
+import { StoryService } from '../../story.service'
 
 @Injectable({
   providedIn: 'root'

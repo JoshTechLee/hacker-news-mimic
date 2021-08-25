@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { JobsService } from 'src/app/services/jobs/jobs.service';
+import { JobsService } from 'src/app/services/stories/jobs/jobs.service';
 import { UiService } from 'src/app/services/ui/ui.service';
 import { StoriesComponent } from '../stories.component';
 

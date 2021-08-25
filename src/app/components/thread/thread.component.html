@@ -1,0 +1,9 @@
+<app-topic [story]="story"></app-topic>
+<div class="comments-container">
+    <app-comments 
+        *ngFor="let story of comments"
+        [story]="story"
+        >
+    </app-comments>
+</div>
+

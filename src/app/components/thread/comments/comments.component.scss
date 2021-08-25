@@ -1,0 +1,25 @@
+.comment {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  overflow: auto;
+  img {
+    height: 10px;
+    width: 10px;
+    top: 0px;
+  }
+  .content {
+    display: inline-block;
+    p {
+      box-sizing: border-box;
+      overflow: auto;
+      word-wrap: break-word;
+    }
+  }
+
+  .child-comments {
+    box-sizing: border-box;
+    overflow: auto;
+    word-wrap: break-word;
+  }
+}

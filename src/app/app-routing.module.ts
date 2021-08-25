@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ThreadComponent } from './components/thread/thread.component';
 import { AskComponent } from './components/stories/ask/ask.component';
 import { HomeComponent } from './components/stories/home/home.component';
 import { JobsComponent } from './components/stories/jobs/jobs.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'ask', component: AskComponent},
   {path: 'show', component: ShowComponent},
   {path: 'jobs', component: JobsComponent},
+  {path: 'item/:itemId', component: ThreadComponent}
 ];
 
 @NgModule({

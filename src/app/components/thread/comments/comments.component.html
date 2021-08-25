@@ -1,0 +1,18 @@
+<div class="comment">
+    <img src="assets/imgs/grayarrow.gif" alt="upvote">
+    <div class="content">
+        <span>
+            <a>{{story.by}}</a> 
+            <a>{{story.datePosted}}</a>
+        </span>
+        <p>{{story.text}}</p>
+        <a>reply</a>
+        <div class="child-comments">
+            <app-comments 
+            *ngFor="let story of comments"
+            [story]="story"
+            >
+            </app-comments>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NewService } from 'src/app/services/new/new.service';
+import { NewService } from 'src/app/services/stories/new/new.service';
 import { UiService } from 'src/app/services/ui/ui.service';
 import { StoriesComponent } from '../stories.component';
 

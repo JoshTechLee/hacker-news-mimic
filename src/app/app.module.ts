@@ -13,7 +13,9 @@ import { StoriesComponent } from './components/stories/stories.component';
 import { AskComponent } from './components/stories/ask/ask.component';
 import { ShowComponent } from './components/stories/show/show.component';
 import { NewComponent } from './components/stories/new/new.component';
-import { CommentsComponent } from './components/comments/comments.component';
+import { CommentsComponent } from './components/thread/comments/comments.component';
+import { TopicComponent } from './components/thread/topic/topic.component';
+import { ThreadComponent } from './components/thread/thread.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { CommentsComponent } from './components/comments/comments.component';
     ShowComponent,
     NewComponent,
     CommentsComponent,
+    TopicComponent,
+    ThreadComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

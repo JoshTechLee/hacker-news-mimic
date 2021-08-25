@@ -1,5 +1,4 @@
-<li>
-    <span class="story-index">{{index + 1}}.</span>
+<div>
     <img src="assets/imgs/grayarrow.gif" alt="upvote">
     <div>
         <h3>{{story.title}}</h3>
@@ -7,7 +6,9 @@
             {{story.score}} points 
             by {{story.by}} 
             {{story.datePosted}} | 
-            hide | 
-            <a [routerLink]="['/item', story.id]">comments</a> </span>
+            hide | past | favorite | 
+            <a [routerLink]="['/item', story.id]">comments</a> 
+        </span>
+
     </div>
-</li>
+</div>

@@ -2,12 +2,12 @@ import { Component, OnInit, Input, Output, EventEmitter, NgModule } from '@angul
 import { Story, initStory } from 'src/app/models/Story';
 
 @Component({
-  selector: 'app-story-item',
-  templateUrl: './story-item.component.html',
-  styleUrls: ['./story-item.component.scss']
+  selector: 'app-topic',
+  templateUrl: './topic.component.html',
+  styleUrls: ['./topic.component.scss']
 })
 
-export class StoryItemComponent implements OnInit {
+export class TopicComponent implements OnInit {
   @Input() index: number = 0
   @Input() story: Story = initStory
 
